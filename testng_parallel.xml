@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="测试套件" parallel="tests" thread-count="2">
+
+    <listeners>
+        <listener class-name="com.lemon.framework.listener.TestResultListener"/>
+    </listeners>
+
+    <test name="测试-注册">
+        <classes>
+            <class name="com.lemon.test.RegisterTest"/>
+        </classes>
+    </test>
+
+    <test name="测试-登录">
+        <classes>
+            <class name="com.lemon.test.LoginTest"/>
+        </classes>
+    </test>
+</suite>
