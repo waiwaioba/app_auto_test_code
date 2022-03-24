@@ -14,6 +14,7 @@ public class LoginTest extends BaseTest {
     @Test
     @Parameters({"udid","appium_port","uiautomator2_port"})
     public void test_login_success(String udid, String appium_port, String uiautomator2_port) {
+        //打开测试App
         AndroidDriver driver = openApp(udid,appium_port,uiautomator2_port);
         IndexPage indexPage = new IndexPage(driver);
         indexPage.enterLoginPage();
